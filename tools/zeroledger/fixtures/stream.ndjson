@@ -1,0 +1,39 @@
+{"t":0,"type":"enqueue","offset":0,"count":2,"bytes":100}
+{"t":10,"type":"enqueue","offset":2,"count":2,"bytes":80}
+{"t":20,"type":"enqueue","offset":4,"count":3,"bytes":150}
+{"t":30,"type":"ack","offset":1}
+{"t":40,"type":"ack","offset":3}
+{"t":50,"type":"ack","offset":0}
+{"t":60,"type":"ack","offset":1}
+{"t":70,"type":"ack","offset":2}
+{"t":80,"type":"ack","offset":5}
+{"t":90,"type":"enqueue","offset":7,"count":2,"bytes":60}
+{"t":100,"type":"enqueue","offset":9,"count":2,"bytes":90}
+{"t":110,"type":"error","offset":7,"retryable":true,"message":"stream interrupted"}
+{"t":120,"type":"recovery_start"}
+{"t":130,"type":"error","offset":7,"retryable":true,"message":"stream interrupted"}
+{"t":140,"type":"enqueue","offset":11,"count":1,"bytes":30}
+{"t":150,"type":"ack","offset":8}
+{"t":600,"type":"recovery_end"}
+{"t":610,"type":"enqueue","offset":12,"count":2,"bytes":70}
+{"t":620,"type":"enqueue","offset":14,"count":1,"bytes":40}
+{"t":630,"type":"error","offset":12,"retryable":false,"message":"invalid schema"}
+{"t":640,"type":"ack","offset":13}
+{"t":650,"type":"error","offset":9,"retryable":true,"message":"transport reset"}
+{"t":660,"type":"recovery_start"}
+{"t":670,"type":"error","offset":9,"retryable":true,"message":"transport reset"}
+{"t":700,"type":"error","offset":10,"retryable":true,"message":"transport reset"}
+{"t":760,"type":"error","offset":7,"retryable":true,"message":"stream interrupted"}
+{"t":800,"type":"recovery_end"}
+{"t":810,"type":"enqueue","offset":15,"count":2,"bytes":50}
+{"t":820,"type":"ack","offset":15}
+{"t":830,"type":"ack","offset":10}
+{"t":840,"type":"ack","offset":7}
+{"t":850,"type":"error","offset":16,"retryable":false,"message":"invalid schema"}
+{"t":860,"type":"ack","offset":9}
+{"t":862,"type":"enqueue","offset":17,"count":2,"bytes":60}
+{"t":864,"type":"ack","offset":17}
+{"t":866,"type":"enqueue","offset":19,"count":1,"bytes":30}
+{"t":868,"type":"enqueue","offset":99,"count":1,"bytes":10}
+{"t":870,"type":"close"}
+{"t":880,"type":"enqueue","offset":20,"count":1,"bytes":10}

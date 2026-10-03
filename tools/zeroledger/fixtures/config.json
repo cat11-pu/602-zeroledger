@@ -1,0 +1,7 @@
+{
+  "max_inflight_requests": 5,
+  "recovery": true,
+  "recovery_retries": 2,
+  "recovery_backoff_ms": 400,
+  "recovery_timeout_ms": 900
+}
